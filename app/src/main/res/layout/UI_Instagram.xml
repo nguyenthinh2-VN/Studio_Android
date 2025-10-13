@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ig_gradient"
+    android:padding="24dp">
+
+    <!-- Logo / Title -->
+    <TextView
+        android:id="@+id/tvLogoInsta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/akaya_kanadaka"
+        android:shadowColor="#55000000"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:text="Instagram"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <!-- Form container -->
+    <LinearLayout
+        android:id="@+id/instaForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvLogoInsta"
+        android:layout_marginTop="28dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etInstaUser"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/ig_input_bg"
+            android:hint="Username"
+            android:textColorHint="#E6FFFFFF"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etInstaPass"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ig_input_bg"
+            android:hint="Password"
+            android:textColorHint="#CCFFFFFF"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:inputType="textPassword" />
+
+        <!-- Login button (disabled style look) -->
+        <Button
+            android:id="@+id/btnInstaLogin"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:text="Log In"
+            android:textStyle="bold"
+            android:textColor="#DDFFFFFF"
+            android:background="@drawable/ig_button_bg" />
+    </LinearLayout>
+
+    <!-- Help signing in -->
+    <TextView
+        android:id="@+id/tvHelpSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instaForm"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Forgot your login details? Get help signing in."
+        android:textColor="#F0FFFFFF"
+        android:textSize="13sp" />
+
+    <!-- OR separator -->
+    <LinearLayout
+        android:id="@+id/sepOr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHelpSignIn"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#55FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:text="OR"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#55FFFFFF" />
+    </LinearLayout>
+
+    <!-- Login with Facebook row -->
+    <LinearLayout
+        android:id="@+id/rowFbLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sepOr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Placeholder fb icon box -->
+        <TextView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:gravity="center"
+            android:text="f"
+            android:background="@drawable/border_oval"
+            android:textStyle="bold"
+            android:textColor="#3B5998">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Log in with Facebook"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Bottom sign up -->
+    <TextView
+        android:id="@+id/tvBottomSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="Don't have an account? Sign up."
+        android:textColor="#F0FFFFFF"
+        android:textSize="13sp" />
+
+</RelativeLayout>

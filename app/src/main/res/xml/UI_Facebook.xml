@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3B5998"
+    android:padding="24dp">
+
+    <!-- Logo placeholder -->
+    <TextView
+        android:id="@+id/tvLogo"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="f"
+        android:textStyle="bold"
+        android:textSize="44sp"
+        android:textColor="#FFFFFF"
+        android:background="#214B8B"
+        android:padding="8dp"
+        android:alpha="0.95" />
+
+    <!-- Language row: English • Change -->
+    <LinearLayout
+        android:id="@+id/langRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="English"
+            android:textColor="#DDE6FF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:text="•"
+            android:textColor="#DDE6FF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Form container -->
+    <LinearLayout
+        android:id="@+id/formContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/langRow"
+        android:layout_marginTop="28dp"
+        android:orientation="vertical">
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email or Phone"
+            android:textColorHint="#CCFFFFFF"
+            android:textColor="#FFFFFF"
+            android:background="@android:color/transparent"
+            android:inputType="textEmailAddress"
+            android:paddingVertical="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E6F0" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Password"
+            android:textColorHint="#99FFFFFF"
+            android:textColor="#FFFFFF"
+            android:background="@android:color/transparent"
+            android:inputType="textPassword"
+            android:paddingVertical="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#7090B0" />
+
+        <!-- Login button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:text="LOG IN"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="#E6FFFFFF"
+            android:backgroundTint="#2C4F87"
+            android:alpha="0.9" />
+    </LinearLayout>
+
+    <!-- Bottom links -->
+    <LinearLayout
+        android:id="@+id/bottomLinks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up for Facebook"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:paddingVertical="6dp" />
+
+        <TextView
+            android:id="@+id/tvForgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textColor="#E6FFFFFF"
+            android:textSize="14sp"
+            android:paddingVertical="4dp" />
+    </LinearLayout>
+
+    <!-- Help '?' on bottom-right -->
+    <TextView
+        android:id="@+id/tvHelp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:text="@string/help_q"
+        android:textStyle="bold"
+        android:textColor="#3B5998"
+        android:background="#E6FFFFFF"
+        android:layout_margin="12dp" />
+
+</RelativeLayout>
