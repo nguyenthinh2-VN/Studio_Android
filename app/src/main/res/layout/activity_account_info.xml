@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/furniture_red">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- Back button placeholder -->
+        <TextView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:text="←"
+            android:textColor="@color/furniture_white"
+            android:textSize="20sp"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Info"
+            android:textColor="@color/furniture_white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <!-- Save button -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:textColor="@color/furniture_white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Form container -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Full name input -->
+            <EditText
+                android:id="@+id/etFullName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/furniture_input_white"
+                android:hint="👤 vudinhhai"
+                android:textColorHint="@color/furniture_gray"
+                android:textColor="@color/black"
+                android:padding="12dp"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Email input -->
+            <EditText
+                android:id="@+id/etEmailInfo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/furniture_input_white"
+                android:hint="📧 Email"
+                android:textColorHint="@color/furniture_gray"
+                android:textColor="@color/black"
+                android:padding="12dp"
+                android:inputType="textEmailAddress"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Username input -->
+            <EditText
+                android:id="@+id/etUsernameInfo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/furniture_input_white"
+                android:hint="👤 Username"
+                android:textColorHint="@color/furniture_gray"
+                android:textColor="@color/black"
+                android:padding="12dp"
+                android:inputType="text"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Password input -->
+            <EditText
+                android:id="@+id/etPasswordInfo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/furniture_input_white"
+                android:hint="🔒 Password"
+                android:textColorHint="@color/furniture_gray"
+                android:textColor="@color/black"
+                android:padding="12dp"
+                android:inputType="textPassword"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Gender selection -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender:"
+                android:textColor="@color/furniture_white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <RadioGroup
+                android:id="@+id/rgGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="24dp">
+
+                <RadioButton
+                    android:id="@+id/rbMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textColor="@color/furniture_white"
+                    android:buttonTint="@color/furniture_white"
+                    android:layout_marginEnd="32dp" />
+
+                <RadioButton
+                    android:id="@+id/rbFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textColor="@color/furniture_white"
+                    android:buttonTint="@color/furniture_white"
+                    android:checked="true" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Bottom navigation dots -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="16dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/border_oval"
+            android:backgroundTint="#80FFFFFF" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/border_oval"
+            android:backgroundTint="#80FFFFFF" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/border_oval"
+            android:backgroundTint="#80FFFFFF" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/border_oval"
+            android:backgroundTint="@color/furniture_white" />
+
+    </LinearLayout>
+
+</LinearLayout>

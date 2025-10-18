@@ -7,4 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    
+    <!-- Furniture App Theme Colors -->
+    <color name="furniture_red">#E53935</color>
+    <color name="furniture_red_dark">#C62828</color>
+    <color name="furniture_red_light">#EF5350</color>
+    <color name="furniture_white">#FFFFFF</color>
+    <color name="furniture_gray">#757575</color>
+    <color name="furniture_light_gray">#EEEEEE</color>
+    <color name="facebook_blue">#3B5998</color>
+    <color name="google_red">#DB4437</color>
 </resources>

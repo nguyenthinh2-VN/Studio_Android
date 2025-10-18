@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/furniture_light_gray">
+
+    <!-- Top image section -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Background image -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/furniture_background"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="false" />
+
+        <!-- Welcome text overlay -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="WELCOME TO\nFURNITURE"
+            android:textColor="@color/furniture_red"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp" />
+
+    </RelativeLayout>
+
+    <!-- Login form section -->
+
+    <!-- Bottom navigation dots -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/furniture_white"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Username input -->
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/furniture_input_white"
+            android:hint="🏠 Username"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/furniture_gray" />
+
+        <!-- Password input -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/furniture_input_white"
+            android:hint="🔒 Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/furniture_gray" />
+
+        <!-- Login button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/furniture_button_red"
+            android:text="LOGIN"
+            android:textColor="@color/furniture_white"
+            android:textStyle="bold" />
+
+        <!-- Social login buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!-- Facebook button -->
+            <Button
+                android:id="@+id/btnFacebook"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/furniture_button_facebook"
+                android:text="f FACEBOOK"
+                android:textColor="@color/furniture_white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <!-- Google button -->
+            <Button
+                android:id="@+id/btnGoogle"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/furniture_button_google"
+                android:text="G+ GOOGLE"
+                android:textColor="@color/furniture_white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Register now button -->
+        <Button
+            android:id="@+id/btnRegisterNow"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/furniture_button_white"
+            android:text="REGISTER NOW"
+            android:textColor="@color/furniture_red"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="16dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/border_oval"
+            android:backgroundTint="#80000000" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/border_oval"
+            android:backgroundTint="@color/black" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/border_oval"
+            android:backgroundTint="#80000000" />
+
+    </LinearLayout>
+
+</LinearLayout>
